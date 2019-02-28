@@ -33,6 +33,10 @@ const appRoutes: Routes = [
         loadChildren: './main/organizations/organizations.module#OrganizationsModule',
     },
     {
+        path: 'contacts',
+        loadChildren: './main/contacts/contacts.module#ContactsModule',
+    },
+    {
         path      : '**',
         redirectTo: 'organizations/list'
     }

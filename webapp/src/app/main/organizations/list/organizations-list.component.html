@@ -26,10 +26,6 @@
 			<div class="content p-24">
 				<ng-container *ngIf="dataSource.length; else noRecord">
 					<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-						<!--<ng-container matColumnDef="id">-->
-						<!--<th mat-header-cell *matHeaderCellDef> #</th>-->
-						<!--<td mat-cell *matCellDef="let element"> {{element.id}}</td>-->
-						<!--</ng-container>-->
 
 						<!-- Name Column -->
 						<ng-container matColumnDef="name">
@@ -42,6 +38,10 @@
 							<th mat-header-cell *matHeaderCellDef></th>
 							<td mat-cell *matCellDef="let element">
 								<div fxFlex="row" fxLayoutAlign="end center">
+									<!-- TODO: edit organization -->
+									<button mat-icon-button aria-label="Редактирай">
+										<mat-icon>edit</mat-icon>
+									</button>
 									<button mat-icon-button aria-label="Изтрий" (click)="deleteElement(element)">
 										<mat-icon>delete</mat-icon>
 									</button>

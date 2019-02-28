@@ -4,6 +4,7 @@ import * as firebase from 'firebase';
 import {Observable} from "rxjs/Observable";
 import {AngularFirestore} from '@angular/fire/firestore';
 import {Organization} from "./models/organization";
+import 'rxjs/operator/map';
 
 
 @Injectable({
@@ -21,7 +22,14 @@ export class OrganizationService {
     }
 
     getList(): Observable<any[]> {
-        return this.firestore.collection(this.PATH).valueChanges();
+        return this.firestore.collection(this.PATH).snapshotChanges().map(rawOrganizations => {
+            return rawOrganizations.map((organization) => {
+                return {
+                    id: organization.payload.doc.id,
+                    ...organization.payload.doc.data()
+                }
+            })
+        })
     }
 
     save(organization: {name: string, id?: string}) {
@@ -37,5 +45,9 @@ export class OrganizationService {
         //     .catch(error => {
         //         return this.firestore.doc(`${this.PATH}${organization.id}`).set({...organization});
         //     });
+    }
+
+    delete(organizationId: string) {
+        return this.firestore.collection(this.PATH).doc(organizationId).delete();
     }
 }

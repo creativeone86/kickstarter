@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54dd39be-d0dd-4bf1-b57a-15edcae673ba" name="Default" comment="" />
+    <list default="true" id="54dd39be-d0dd-4bf1-b57a-15edcae673ba" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/app.component.scss" afterPath="$PROJECT_DIR$/webapp/src/app/app.component.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/app.theme.scss" afterPath="$PROJECT_DIR$/webapp/src/app/app.theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" afterPath="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +26,7 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-45">
               <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
               <folding />
             </state>
@@ -24,18 +36,18 @@
       <file leaf-file-name="organizations-list.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1562">
-              <caret line="70" column="120" lean-forward="false" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
+            <state relative-caret-position="239">
+              <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organization.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="organization.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="396">
+              <caret line="72" column="68" lean-forward="false" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -44,8 +56,28 @@
       <file leaf-file-name="organizations-list.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="453">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shared.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/@fuse/shared.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizations.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -54,7 +86,7 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="982">
               <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding />
             </state>
@@ -64,8 +96,8 @@
       <file leaf-file-name="organization.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -91,11 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organizations-list.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="organizations-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="242">
+              <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog.es5.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/node_modules/@angular/material/esm5/dialog.es5.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -114,8 +156,8 @@
       <file leaf-file-name="organization.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/core/organization.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="66">
+              <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -124,8 +166,18 @@
       <file leaf-file-name="app.component.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="74">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.theme.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/app.theme.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="294" column="1" lean-forward="false" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -208,14 +260,17 @@
       <find>appUser</find>
       <find>BrowserAnimationsModule</find>
       <find>@inject</find>
-      <find>matdialog</find>
       <find>newOrganization</find>
       <find>inject</find>
-      <find>MatDialogRef</find>
-      <find>dialog</find>
-      <find>matdialogref</find>
       <find>matDialogRef</find>
       <find>_matDialog</find>
+      <find>dialog</find>
+      <find>MatDialogRef</find>
+      <find>matdialog</find>
+      <find>shared</find>
+      <find>MatDialogData</find>
+      <find>displayedColumns</find>
+      <find>matdialogref</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/webapp/src/app/main/organizations</dir>
@@ -223,6 +278,9 @@
       <dir>$PROJECT_DIR$/webapp/src</dir>
       <dir>$PROJECT_DIR$/webapp/src/app</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -236,20 +294,23 @@
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.module.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/fuse-config/index.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/navigation/navigation.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/navigation/i18n/en.ts" />
         <option value="$PROJECT_DIR$/webapp/src/@fuse/components/theme-options/theme-options.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/layout/components/navbar/vertical/style-1/style-1.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" />
-        <option value="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.scss" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html" />
         <option value="$PROJECT_DIR$/webapp/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/webapp/src/app/app.theme.scss" />
+        <option value="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts" />
       </list>
     </option>
   </component>
@@ -285,6 +346,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -385,15 +447,6 @@
               <item name="dialogs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="compose" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sample" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -404,6 +457,7 @@
     <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/src/app/main/organizations/list" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -439,12 +493,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551217110645</updated>
-      <workItem from="1551217111919" duration="9849000" />
+      <workItem from="1551217111919" duration="21602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9849000" />
+    <option name="totallyTimeSpent" value="21602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -453,10 +507,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3420502" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2735849" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19811843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20365246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -561,14 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -665,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/navigation/i18n/en.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -745,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/organization.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/node_modules/@angular/material/bundles/material-icon.umd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -769,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -785,58 +807,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-45">
+          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/@fuse/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/node_modules/@angular/material/esm5/dialog.es5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="982">
           <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        <state relative-caret-position="74">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="294" column="1" lean-forward="false" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/organization.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="70" column="120" lean-forward="false" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
+        <state relative-caret-position="453">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="242">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="26" column="71" lean-forward="true" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="72" column="68" lean-forward="false" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
           <folding />
         </state>
       </provider>

@@ -17,7 +17,14 @@
                 <input matInput name="name"
                        formControlName="name"
                        type="text">
-            </mat-form-field>
+
+				<mat-error>
+					{{getErrorMessage()}}
+				</mat-error>
+				<!-- TODO: show errors explicitly -->
+				<!--<mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>-->
+
+			</mat-form-field>
         </form>
     </div>
 

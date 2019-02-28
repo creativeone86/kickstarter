@@ -1,40 +1,40 @@
-import {Component, Inject} from '@angular/core';
+import {Component} from '@angular/core';
 import {OrganizationService} from "../../../core/organization.service";
-import {Observable} from "rxjs/Rx";
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from "@angular/material/dialog";
-import {OrganizationDialogComponent} from "./dialogs/compose/organization.component";
-import {FormGroup} from "@angular/forms";
+import {MatDialog, MatDialogConfig, MatSnackBarConfig} from '@angular/material';
+import {MatSnackBar} from '@angular/material';
+import {find} from 'lodash';
 
+
+import {OrganizationDialogComponent} from "./dialogs/compose/organization.component";
 
 @Component({
-    selector   : 'organizations-list',
+    selector: 'organizations-list',
     templateUrl: './organizations-list.component.html',
-    styleUrls  : ['./organizations-list.component.scss']
+    styleUrls: ['./organizations-list.component.scss']
 })
-export class OrganizationsListComponent
-{
-    displayedColumns: string[] = ['name'];
-    dataSource: Observable<any[]>;
-    public _matDialog: MatDialog;
-    public dialogRef: any;
+export class OrganizationsListComponent {
+    displayedColumns: string[] = ['name', 'buttons'];
+    dataSource: any[] = [];
+
     /**
      * Constructor
      */
-    constructor(
-        // public matDialogRef: MatDialogRef<OrganizationDialogComponent>,
-        //  @Inject(MAT_DIALOG_DATA) private _data: any,
-         private _organizationService: OrganizationService
-    )
-    {
-        this.dataSource = this._organizationService.getList();
+    constructor(public dialog: MatDialog,
+                private _organizationService: OrganizationService,
+                private snackBar: MatSnackBar
+    ) {
+        this._organizationService.getList().subscribe(dataSource => this.dataSource = dataSource);
 
     }
 
     composeOrganizationDialog() {
-        // this.dialogRef = this._matDialog.open(OrganizationDialogComponent, {
-        //     panelClass: 'organization-compose-dialog'
-        // });
-        // this.dialogRef.afterClosed()
+        const config = new MatDialogConfig();
+        config.panelClass = 'organization-compose-dialog';
+        config.data = {dataSource: this.dataSource};
+
+        const dialogRef = this.dialog.open(OrganizationDialogComponent, config);
+
+        // dialogRef.afterClosed()
         //     .subscribe(response => {
         //         if (!response) {
         //             return;
@@ -50,5 +50,17 @@ export class OrganizationsListComponent
         //                 break;
         //         }
         //     });
+    }
+
+    deleteElement(element) {
+        const config = new MatSnackBarConfig();
+        config.duration = 2000;
+        this._organizationService
+            .delete(element.id)
+            .then(data => this.snackBar.open(
+                `Организация '${element.name}' е изтрита успешно.`,
+                null,
+                config
+            ));
     }
 }

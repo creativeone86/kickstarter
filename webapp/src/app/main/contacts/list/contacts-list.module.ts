@@ -3,7 +3,7 @@ import {RouterModule} from '@angular/router';
 import {
     MatButtonModule,
     MatCheckboxModule,
-    MatDatepickerModule, MatDialogModule,
+    MatDatepickerModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
@@ -14,25 +14,24 @@ import {
 } from '@angular/material';
 import {FuseSharedModule} from '@fuse/shared.module';
 
-import {OrganizationsListComponent} from './organizations-list.component';
+import {ContactsListComponent} from './contacts-list.component';
 import {AuthService} from "../../../core/auth.service";
 import {AuthGuard} from "../../../core/auth.guard";
-import {OrganizationDialogComponent} from "./dialogs/compose/organization.component";
+import {ContactComponent} from "./dialogs/compose/contact.component";
 import {EditComponent} from "./dialogs/edit/edit.component";
 
 const routes = [
     {
         path: 'list',
-        component: OrganizationsListComponent,
+        component: ContactsListComponent,
         canActivate: [AuthGuard],
-
     }
 ];
 
 @NgModule({
     declarations: [
-        OrganizationsListComponent,
-        OrganizationDialogComponent,
+        ContactsListComponent,
+        ContactComponent,
         EditComponent
     ],
     imports: [
@@ -55,10 +54,10 @@ const routes = [
     ],
     providers: [AuthService],
     entryComponents: [
-        OrganizationsListComponent,
-        OrganizationDialogComponent,
+        ContactsListComponent,
+        ContactComponent,
         EditComponent
     ]
 })
-export class OrganizationsListModule {
+export class ContactsListModule {
 }

@@ -6,6 +6,7 @@ import {find} from 'lodash';
 
 
 import {OrganizationDialogComponent} from "./dialogs/compose/organization.component";
+import {EditComponent} from "./dialogs/edit/edit.component";
 
 @Component({
     selector: 'organizations-list',
@@ -50,6 +51,17 @@ export class OrganizationsListComponent {
         //                 break;
         //         }
         //     });
+    }
+
+    editElement(element) {
+        const config = new MatDialogConfig();
+        config.panelClass = 'edit-compose-dialog';
+        config.data = {
+            organization: element,
+            dataSource: this.dataSource
+        };
+
+        this.dialog.open(EditComponent, config);
     }
 
     deleteElement(element) {

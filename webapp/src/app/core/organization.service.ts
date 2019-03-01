@@ -32,6 +32,16 @@ export class OrganizationService {
         })
     }
 
+    edit(id, data) {
+        return this.firestore.collection(this.PATH)
+            .doc(id)
+            .set(data)
+            .then(saved => saved)
+            .catch(error => {
+                console.log("@err", error);
+            })
+    }
+
     save(organization: {name: string, id?: string}) {
         return this.firestore.collection(this.PATH)
             .add(organization)

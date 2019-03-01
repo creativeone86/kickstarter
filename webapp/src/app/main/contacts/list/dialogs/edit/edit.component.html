@@ -1,0 +1,40 @@
+<div class="dialog-content-wrapper">
+	<mat-toolbar class="mat-accent m-0">
+		<mat-toolbar-row fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+			<span class="title dialog-title">Редактирай контакт</span>
+			<button mat-icon-button (click)="matDialogRef.close()" aria-label="Затвори">
+				<mat-icon>close</mat-icon>
+			</button>
+		</mat-toolbar-row>
+	</mat-toolbar>
+
+	<div mat-dialog-content class="p-24 m-0" fusePerfectScrollbar>
+
+		<form name="composeForm" [formGroup]="composeForm" class="compose-form" fxLayout="column" fxFlex>
+
+			<mat-form-field appearance="outline">
+				<mat-label>Име на контакт</mat-label>
+				<input matInput name="name"
+					   formControlName="name"
+					   type="text">
+
+				<mat-error>
+					{{getErrorMessage()}}
+				</mat-error>
+			</mat-form-field>
+		</form>
+	</div>
+
+	<div mat-dialog-actions class="m-0 p-16" fxLayout="row" fxLayoutAlign="space-between center">
+		<div>
+			<button mat-raised-button
+					color="accent"
+					(click)="editContact(composeForm)"
+					class="save-button"
+					[disabled]="composeForm.invalid"
+					aria-label="РЕДАКТИРАЙ">
+				РЕДАКТИРАЙ
+			</button>
+		</div>
+	</div>
+</div>

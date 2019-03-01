@@ -20,6 +20,20 @@ export const navigation: FuseNavigation[] = [
                 //     bg: '#F44336',
                 //     fg: '#FFFFFF'
                 // }
+            },
+            {
+                id: 'contacts',
+                title: 'Контакти',
+                translate: 'NAV.CONTACTS.TITLE',
+                type: 'item',
+                icon: 'contacts',
+                url: '/contacts/list',
+                // badge: {
+                //     title: '25',
+                //     translate: 'NAV.SAMPLE.BADGE',
+                //     bg: '#F44336',
+                //     fg: '#FFFFFF'
+                // }
             }
             // {
             //     id       : 'sample',

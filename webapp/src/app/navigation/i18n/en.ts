@@ -9,6 +9,9 @@ export const locale = {
             },
             'ORGANIZATIONS': {
                 'TITLE': 'Организации'
+            },
+            'CONTACTS': {
+                'TITLE': 'Контакти'
             }
         }
     }

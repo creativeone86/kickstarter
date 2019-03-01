@@ -3,14 +3,15 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import {OrganizationService} from "../../../../../core/organization.service";
 import {find, isUndefined, get} from 'lodash';
+import {ContactService} from "../../../../../core/contact.service";
 
 @Component({
-    selector     : 'add-organization',
-    templateUrl  : './organization.component.html',
-    styleUrls    : ['./organization.component.scss'],
+    selector     : 'add-contact',
+    templateUrl  : './contact.component.html',
+    styleUrls    : ['./contact.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class OrganizationDialogComponent
+export class ContactComponent
 {
     showExtraToFields: boolean;
     composeForm: FormGroup;
@@ -20,12 +21,12 @@ export class OrganizationDialogComponent
      *
      * @param {MatDialogRef<OrganizationDialogComponent>} matDialogRef
      * @param _data
-     * @param {OrganizationService} _organizationService
+     * @param {OrganizationService} _contactService
      */
     constructor(
-        public matDialogRef: MatDialogRef<OrganizationDialogComponent>,
+        public matDialogRef: MatDialogRef<ContactComponent>,
         @Inject(MAT_DIALOG_DATA) private _data: any,
-        private _organizationService: OrganizationService
+        private _contactService: ContactService
     )
     {
         // Set the defaults
@@ -69,18 +70,15 @@ export class OrganizationDialogComponent
         const isDuplicate = get(this.name, 'controls.name.errors.alreadyExists', false);
         let msg = '';
 
-        if(isRequired) msg = 'Името на организацията е задължително.';
+        if(isRequired) msg = 'Името на контакт е задължително.';
         if(isDuplicate) msg = 'Изберете друго име, това е заето.';
 
         return msg;
     }
 
-    async addOrganization(formData: FormGroup) {
-        const name = formData.get('name').value;
-
-
+    async addContact(formData: FormGroup) {
         try {
-            const result = await this._organizationService.save({name: formData.get('name').value});
+            const result = await this._contactService.save({name: formData.get('name').value});
             console.log("@result", result);
         } catch (e) {
             console.log("@e", e);

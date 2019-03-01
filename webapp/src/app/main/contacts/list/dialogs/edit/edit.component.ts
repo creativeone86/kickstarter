@@ -1,16 +1,16 @@
-import { Component, Inject, ViewEncapsulation } from '@angular/core';
+import {Component, Inject, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import {OrganizationService} from "../../../../../core/organization.service";
 import {find, isUndefined, get} from 'lodash';
+import {ContactService} from "../../../../../core/contact.service";
 
 @Component({
-    selector     : 'add-organization',
-    templateUrl  : './organization.component.html',
-    styleUrls    : ['./organization.component.scss'],
+    selector     : 'edit-contact',
+    templateUrl  : './edit.component.html',
+    styleUrls    : ['./edit.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class OrganizationDialogComponent
+export class EditComponent
 {
     showExtraToFields: boolean;
     composeForm: FormGroup;
@@ -20,12 +20,12 @@ export class OrganizationDialogComponent
      *
      * @param {MatDialogRef<OrganizationDialogComponent>} matDialogRef
      * @param _data
-     * @param {OrganizationService} _organizationService
+     * @param {ContactService} _contactService
      */
     constructor(
-        public matDialogRef: MatDialogRef<OrganizationDialogComponent>,
+        public matDialogRef: MatDialogRef<EditComponent>,
         @Inject(MAT_DIALOG_DATA) private _data: any,
-        private _organizationService: OrganizationService
+        private _contactService: ContactService
     )
     {
         // Set the defaults
@@ -59,7 +59,7 @@ export class OrganizationDialogComponent
     createComposeForm(): FormGroup
     {
         this.name = new FormGroup({
-            name: new FormControl('', [Validators.required, this.checkForDuplicate.bind(this)])
+            name: new FormControl(this._data.contact.name, [Validators.required, this.checkForDuplicate.bind(this)])
         });
         return this.name;
     }
@@ -69,25 +69,20 @@ export class OrganizationDialogComponent
         const isDuplicate = get(this.name, 'controls.name.errors.alreadyExists', false);
         let msg = '';
 
-        if(isRequired) msg = 'Името на организацията е задължително.';
+        if(isRequired) msg = 'Името на контакта е задължително.';
         if(isDuplicate) msg = 'Изберете друго име, това е заето.';
 
         return msg;
     }
 
-    async addOrganization(formData: FormGroup) {
-        const name = formData.get('name').value;
-
-
+    async editContact(formData: FormGroup) {
         try {
-            const result = await this._organizationService.save({name: formData.get('name').value});
-            console.log("@result", result);
+            await this._contactService.edit(this._data.contact.id, {name: formData.get('name').value});
         } catch (e) {
             console.log("@e", e);
         }
 
         this.matDialogRef.close();
-        // console.log("@match", match);
 
 
     }

@@ -9,6 +9,7 @@ import {EditComponent} from "./dialogs/edit/edit.component";
 import {ContactService} from "../../../core/contact.service";
 import {OrganizationService} from "../../../core/organization.service";
 import * as moment from 'moment';
+import {MailService} from "../../../core/mail.service";
 
 
 @Component({
@@ -33,7 +34,9 @@ export class ContactsListComponent {
     constructor(public dialog: MatDialog,
                 private _contactService: ContactService,
                 private _organizationService: OrganizationService,
-                private snackBar: MatSnackBar) {
+                private snackBar: MatSnackBar,
+                private _mailService: MailService
+    ) {
         this._contactService.getList().subscribe(dataSource => this.dataSource = dataSource);
         this._organizationService.getList().subscribe(organizations => this.organizations = organizations);
 
@@ -61,6 +64,10 @@ export class ContactsListComponent {
 
     normalizeDob(rawDob = null) {
         return rawDob !== null ? moment.unix(rawDob.seconds).format('MM/DD/YYYY') : null;
+    }
+
+    sendMail(element) {
+        this._mailService.sendMail(element.email, 'Жик так, успяяях');
     }
 
     editElement(element) {

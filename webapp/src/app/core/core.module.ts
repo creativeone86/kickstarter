@@ -6,6 +6,8 @@ import {AngularFireAuth} from "@angular/fire/auth";
 import {AngularFireDatabase, AngularFireDatabaseModule} from "@angular/fire/database";
 import {AngularFirestore} from "@angular/fire/firestore";
 import {MatSnackBarModule} from "@angular/material";
+import {MailService} from "./mail.service";
+import {AngularFireFunctions, AngularFireFunctionsModule} from "@angular/fire/functions";
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import {MatSnackBarModule} from "@angular/material";
         CommonModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireDatabaseModule,
+        AngularFireFunctionsModule,
         MatSnackBarModule
 
     ],
@@ -21,7 +24,9 @@ import {MatSnackBarModule} from "@angular/material";
     providers: [
         AngularFireAuth,
         AngularFirestore,
-        AngularFireDatabase
+        AngularFireDatabase,
+        AngularFireFunctions,
+        MailService
     ]
 })
 export class CoreModule {

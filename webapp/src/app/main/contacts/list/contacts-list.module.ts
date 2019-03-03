@@ -8,7 +8,7 @@ import {
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    MatRippleModule,
+    MatRippleModule, MatSelectModule,
     MatTableModule,
     MatToolbarModule
 } from '@angular/material';
@@ -46,6 +46,7 @@ const routes = [
         MatInputModule,
         MatMenuModule,
         MatRippleModule,
+        MatSelectModule,
         MatTableModule,
         MatToolbarModule,
 

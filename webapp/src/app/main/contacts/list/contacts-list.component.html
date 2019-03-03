@@ -33,13 +33,29 @@
 							<td mat-cell *matCellDef="let element"> {{element.name}}</td>
 						</ng-container>
 
+						<ng-container matColumnDef="email">
+							<th mat-header-cell *matHeaderCellDef> Email</th>
+							<td mat-cell *matCellDef="let element"> {{element.email}}</td>
+						</ng-container>
+
+						<ng-container matColumnDef="selectedOrganizationId">
+							<th mat-header-cell *matHeaderCellDef> Огранизация</th>
+							<td mat-cell *matCellDef="let element"> {{getOrganizationName(element.selectedOrganizationId)?.name}}</td>
+						</ng-container>
+
+						<ng-container matColumnDef="dob">
+							<th mat-header-cell *matHeaderCellDef> Дата на раждане</th>
+							<td mat-cell *matCellDef="let element">
+								{{normalizeDob(element.dob || null)}}
+							</td>
+						</ng-container>
 						<!-- Buttons Column -->
 						<ng-container matColumnDef="buttons">
 							<th mat-header-cell *matHeaderCellDef></th>
 							<td mat-cell *matCellDef="let element">
 								<div fxFlex="row" fxLayoutAlign="end center">
 									<button
-											(click)="editElement(element)"
+											(click)="openAdd(element)"
 											mat-icon-button
 											aria-label="Редактирай">
 										<mat-icon>edit</mat-icon>

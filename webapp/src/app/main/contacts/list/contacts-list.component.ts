@@ -7,6 +7,9 @@ import {find} from 'lodash';
 import {ContactComponent} from "./dialogs/compose/contact.component";
 import {EditComponent} from "./dialogs/edit/edit.component";
 import {ContactService} from "../../../core/contact.service";
+import {OrganizationService} from "../../../core/organization.service";
+import * as moment from 'moment';
+
 
 @Component({
     selector: 'contacts-list',
@@ -14,26 +17,50 @@ import {ContactService} from "../../../core/contact.service";
     styleUrls: ['./contacts-list.component.scss']
 })
 export class ContactsListComponent {
-    displayedColumns: string[] = ['name', 'buttons'];
+    displayedColumns: string[] = [
+        'name',
+        'email',
+        'selectedOrganizationId',
+        'dob',
+        'buttons'
+    ];
     dataSource: any[] = [];
+    organizations = [];
 
     /**
      * Constructor
      */
     constructor(public dialog: MatDialog,
                 private _contactService: ContactService,
-                private snackBar: MatSnackBar
-    ) {
+                private _organizationService: OrganizationService,
+                private snackBar: MatSnackBar) {
         this._contactService.getList().subscribe(dataSource => this.dataSource = dataSource);
+        this._organizationService.getList().subscribe(organizations => this.organizations = organizations);
 
     }
 
-    openAdd() {
+    getOrganizationName(id) {
+        return find(this.organizations, {id}, null);
+    }
+
+    openAdd(element = null) {
         const config = new MatDialogConfig();
         config.panelClass = 'person-compose-dialog';
-        config.data = {dataSource: this.dataSource};
+        config.data = {
+            dataSource: this.dataSource,
+            type: 'add'
+        };
+
+        if (element !== null) {
+            config.data.contact = element;
+            config.data.type = 'edit';
+        }
 
         this.dialog.open(ContactComponent, config);
+    }
+
+    normalizeDob(rawDob = null) {
+        return rawDob !== null ? moment.unix(rawDob.seconds).format('MM/DD/YYYY') : null;
     }
 
     editElement(element) {

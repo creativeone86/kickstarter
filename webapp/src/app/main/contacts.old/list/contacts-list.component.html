@@ -26,6 +26,16 @@
 			<div class="content p-24">
 				<ng-container *ngIf="dataSource.length; else noRecord">
 					<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+						<!-- Checkbox Column -->
+						<ng-container matColumnDef="checkbox">
+							<mat-header-cell *matHeaderCellDef></mat-header-cell>
+							<mat-cell *matCellDef="let element">
+								<mat-checkbox [(ngModel)]="checkboxes[element.id]"
+											  (ngModelChange)="onSelectedChange(element.id)"
+											  (click)="$event.stopPropagation()">
+								</mat-checkbox>
+							</mat-cell>
+						</ng-container>
 
 						<!-- Name Column -->
 						<ng-container matColumnDef="name">

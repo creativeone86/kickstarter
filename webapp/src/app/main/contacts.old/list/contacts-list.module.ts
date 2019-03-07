@@ -17,6 +17,7 @@ import {FuseSharedModule} from '@fuse/shared.module';
 import {ContactsListComponent} from './contacts-list.component';
 import {AuthService} from "../../../core/auth.service";
 import {AuthGuard} from "../../../core/auth.guard";
+import {ContactService} from "../../core/contact.service";
 import {ContactComponent} from "./dialogs/compose/contact.component";
 import {EditComponent} from "./dialogs/edit/edit.component";
 
@@ -53,7 +54,7 @@ const routes = [
 
         FuseSharedModule
     ],
-    providers: [AuthService],
+    providers: [AuthService, ContactService],
     entryComponents: [
         ContactsListComponent,
         ContactComponent,

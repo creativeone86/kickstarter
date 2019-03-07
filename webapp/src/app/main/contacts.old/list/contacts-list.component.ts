@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {MatDialog, MatDialogConfig, MatSnackBarConfig} from '@angular/material';
 import {MatSnackBar} from '@angular/material';
-import {find} from 'lodash';
+import {find, forEach} from 'lodash';
 
 
 import {ContactComponent} from "./dialogs/compose/contact.component";
@@ -19,6 +19,7 @@ import {MailService} from "../../../core/mail.service";
 })
 export class ContactsListComponent {
     displayedColumns: string[] = [
+        'checkbox',
         'name',
         'email',
         'selectedOrganizationId',
@@ -27,6 +28,7 @@ export class ContactsListComponent {
     ];
     dataSource: any[] = [];
     organizations = [];
+    checkboxes: {};
 
     /**
      * Constructor
@@ -37,7 +39,14 @@ export class ContactsListComponent {
                 private snackBar: MatSnackBar,
                 private _mailService: MailService
     ) {
-        this._contactService.getList().subscribe(dataSource => this.dataSource = dataSource);
+        this._contactService.getList().subscribe(dataSource => {
+            this.dataSource = dataSource;
+            forEach(dataSource, (contact) => {
+                this.checkboxes[contact.id] = false;
+                console.log();
+            });
+            console.log("@data", dataSource);
+        });
         this._organizationService.getList().subscribe(organizations => this.organizations = organizations);
 
     }
@@ -91,5 +100,10 @@ export class ContactsListComponent {
                 null,
                 config
             ));
+    }
+
+
+    onSelectedChange(id) {
+        console.log("@id", id);
     }
 }

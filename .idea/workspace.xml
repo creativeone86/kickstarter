@@ -2,14 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54dd39be-d0dd-4bf1-b57a-15edcae673ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/core/mail.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/contacts.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contact.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.theme.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.scss" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.module.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.module.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.scss" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.scss" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/functions/index.js" afterPath="$PROJECT_DIR$/server/functions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/functions/package.json" afterPath="$PROJECT_DIR$/server/functions/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/core/core.module.ts" afterPath="$PROJECT_DIR$/webapp/src/app/core/core.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" afterPath="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts" afterPath="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,172 +44,173 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="258">
       <file leaf-file-name="contacts-list.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="61" />
+            <state relative-caret-position="591">
+              <caret line="106" column="64" lean-forward="false" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts-list.component.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.scss">
+      <file leaf-file-name="contacts.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="174">
+              <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.html">
+      <file leaf-file-name="contact-list.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="67" />
+            <state relative-caret-position="193">
+              <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="material-datepicker.umd.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/node_modules/@angular/material/bundles/material-datepicker.umd.js">
+      <file leaf-file-name="contacts.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36190">
-              <caret line="1645" column="7" lean-forward="false" selection-start-line="1645" selection-start-column="7" selection-end-line="1645" selection-end-column="7" />
+            <state relative-caret-position="350">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="contact.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.ts">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="120" column="9" lean-forward="false" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="122" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".firebaserc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/.firebaserc">
+      <file leaf-file-name="contacts.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/firebase.json">
+      <file leaf-file-name="contact-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="onUpdate.f.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/functions/db/contacts/onUpdate.f.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/functions/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/functions/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="-1399">
+              <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
-                <marker date="1551654425759" expanded="true" signature="771:1861" ph="..." />
+                <marker date="1552000022148" expanded="true" signature="5896:5992" ph="{...}" />
+                <marker date="1552000022148" expanded="true" signature="6020:6084" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/core/mail.service.ts">
+      <file leaf-file-name="contact-form.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="402">
+              <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/core/core.module.ts">
+      <file leaf-file-name="contact-form.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="116" column="26" lean-forward="true" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/functions/node_modules/@sendgrid/client/index.js">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/.gitignore">
+      <file leaf-file-name="contacts.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.model.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.ts">
+      <file leaf-file-name="selected-bar.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="54" column="36" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.html">
+      <file leaf-file-name="contacts-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="-572">
+              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.component.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.scss">
+      <file leaf-file-name="contacts-list.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -195,48 +219,8 @@
       <file leaf-file-name="contact.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/src/app/core/contact.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.component.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts-list.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organization.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/src/app/core/organization.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="281">
+              <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -254,15 +238,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@inject</find>
-      <find>newOrganization</find>
-      <find>inject</find>
-      <find>matDialogRef</find>
-      <find>_matDialog</find>
-      <find>dialog</find>
-      <find>MatDialogRef</find>
-      <find>matdialog</find>
-      <find>shared</find>
       <find>MatDialogData</find>
       <find>displayedColumns</find>
       <find>matdialogref</find>
@@ -284,12 +259,22 @@
       <find>nodemailer</find>
       <find>Firestore</find>
       <find>request</find>
+      <find>Contact</find>
+      <find>checkboxes</find>
+      <find>organizationdialogcomponent</find>
+      <find>contacts-contacts</find>
+      <find>onContactsChanged</find>
+      <find>user.starred.includes</find>
+      <find>*ngIf=&quot;user.starred.includes(</find>
+      <find>getUserData</find>
+      <find>line-height</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/webapp/src/app/main/organizations</dir>
       <dir>$PROJECT_DIR$/webapp/src/app/navigation</dir>
-      <dir>$PROJECT_DIR$/webapp/src/app</dir>
       <dir>$PROJECT_DIR$/webapp/src</dir>
+      <dir>$PROJECT_DIR$/webapp/src/app</dir>
+      <dir>$PROJECT_DIR$/webapp/src/app/main/contacts</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -298,10 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.component.html" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/list.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/fuse-config/index.ts" />
         <option value="$PROJECT_DIR$/webapp/src/@fuse/components/theme-options/theme-options.component.ts" />
@@ -313,13 +294,6 @@
         <option value="$PROJECT_DIR$/webapp/src/app/app.theme.scss" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/dialogs/compose/organization.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.service.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.scss" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit/edit.component.html" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.html" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit/edit.component.scss" />
@@ -327,7 +301,6 @@
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit/edit.component.ts" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.scss" />
         <option value="$PROJECT_DIR$/webapp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/navigation/i18n/en.ts" />
@@ -343,12 +316,24 @@
         <option value="$PROJECT_DIR$/server/db/contacts/onUpdate.f.js" />
         <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/server/functions/db/contacts/onUpdate.f.js" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html" />
-        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/core/organization.service.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/core/core.module.ts" />
         <option value="$PROJECT_DIR$/webapp/src/app/core/mail.service.ts" />
         <option value="$PROJECT_DIR$/server/functions/index.js" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.html" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.module.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.service.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.html" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.scss" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.ts" />
+        <option value="$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.html" />
       </list>
     </option>
   </component>
@@ -413,8 +398,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,6 +419,21 @@
             <path>
               <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
               <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -450,14 +448,6 @@
               <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
@@ -484,12 +474,87 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="contacts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contact-form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contact-list" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sidebars" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sidebars" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts.old" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts.old" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts.old" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dialogs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="kickstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kickstarter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contacts.old" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="list" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dialogs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="compose" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,16 +566,16 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapp/src/app/main" />
+      <recent name="$PROJECT_DIR$/webapp/src/app/main/contacts" />
+      <recent name="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit" />
+      <recent name="$PROJECT_DIR$/webapp/src/app/main/organizations/list" />
+      <recent name="$PROJECT_DIR$/webapp/src/assets/images/avatars" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server/functions" />
       <recent name="$PROJECT_DIR$/webapp/src/app/main/organizations/list" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webapp/src/app/main/contacts" />
-      <recent name="$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit" />
-      <recent name="$PROJECT_DIR$/webapp/src/app/main" />
-      <recent name="$PROJECT_DIR$/webapp/src/app/main/organizations/list" />
-      <recent name="$PROJECT_DIR$/webapp/src/assets/images/avatars" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -541,26 +606,28 @@
       <workItem from="1551217111919" duration="21946000" />
       <workItem from="1551367318737" duration="1464000" />
       <workItem from="1551649158162" duration="4614000" />
+      <workItem from="1551993880279" duration="4605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45657000" />
+    <option name="totallyTimeSpent" value="50262000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18428335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11425576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27780852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36792454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -568,7 +635,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -649,97 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/sample/sample.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/@fuse/shared.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/organizations.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/node_modules/@angular/material/esm5/dialog.es5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/organizations-list.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/fuse-config/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/layout/components/navbar/vertical/style-1/style-1.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/layout/components/toolbar/toolbar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="32" column="106" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/layout/components/navbar/vertical/style-1/style-1.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/edit/edit.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/main/organizations/list/dialogs/compose/organization.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -765,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,21 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact.model.ts" />
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -827,7 +786,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.scss">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
@@ -835,7 +794,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.scss">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -843,7 +802,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.scss">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
@@ -851,7 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.html">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
@@ -859,15 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/edit/edit.component.ts">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/edit/edit.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1738">
           <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
@@ -883,7 +834,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.html">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="67" />
@@ -891,24 +842,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/dialogs/compose/contact.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="120" column="9" lean-forward="false" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/db/contacts.js" />
     <entry file="file://$PROJECT_DIR$/server/index.js" />
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/contact.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/functions/db/contacts/onUpdate.f.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -919,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="924">
           <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding />
         </state>
@@ -933,32 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/list/contacts-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/functions/firebase-debug.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/functions/firebase-debug.log" />
     <entry file="file://$PROJECT_DIR$/server/functions/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="396">
           <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
@@ -982,8 +895,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/app/core/core.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="396">
           <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/mail.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/functions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <marker date="1551654425759" expanded="true" signature="771:1861" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/contacts.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -996,21 +943,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/mail.service.ts">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/functions/index.js">
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="132">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/selected-bar/selected-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="54" column="36" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/dialogs/compose/organization.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/sidebars/main/main.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1399">
+          <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
           <folding>
-            <marker date="1551654425759" expanded="true" signature="771:1861" ph="..." />
+            <marker date="1552000022148" expanded="true" signature="5896:5992" ph="{...}" />
+            <marker date="1552000022148" expanded="true" signature="6020:6084" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-list/contact-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contacts.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="106" column="64" lean-forward="false" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/contacts-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts.old/list/dialogs/compose/contact.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="122" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/core/contact.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/app/main/contacts/contact-form/contact-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="116" column="26" lean-forward="true" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

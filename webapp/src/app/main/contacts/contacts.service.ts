@@ -265,9 +265,7 @@ export class ContactsService implements Resolve<any>
      */
     deleteContact(contact): void
     {
-        const contactIndex = this.contacts.indexOf(contact);
-        this.contacts.splice(contactIndex, 1);
-        this.onContactsChanged.next(this.contacts);
+        this._contactService.delete(contact.id);
     }
 
     /**

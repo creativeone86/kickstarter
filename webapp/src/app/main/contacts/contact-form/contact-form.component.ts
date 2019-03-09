@@ -1,9 +1,14 @@
 import { Component, Inject, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 import { Contact } from '../contact.model';
 import {ContactService} from "../../../core/contact.service";
+import * as moment from 'moment';
+import {get} from 'lodash';
+import {Observable} from "rxjs/Rx";
+import {OrganizationService} from "../../../core/organization.service";
+
 
 @Component({
     selector     : 'contacts-contact-form-dialog',
@@ -18,6 +23,18 @@ export class ContactsContactFormDialogComponent
     contact: Contact;
     contactForm: FormGroup;
     dialogTitle: string;
+    organizations: Observable<any[]>;
+    statusList: string[] = [
+        'Редови гражданин',
+        'Партиен член',
+        'Нпо представител',
+        'Отговорник за група хора',
+        'Шеф на район/зона',
+        'Член на щаб',
+        'Твърдо ядро',
+        'Отговорник секторни политики'
+    ];
+    status = new FormControl([]);
 
     /**
      * Constructor
@@ -30,20 +47,22 @@ export class ContactsContactFormDialogComponent
         public matDialogRef: MatDialogRef<ContactsContactFormDialogComponent>,
         @Inject(MAT_DIALOG_DATA) private _data: any,
         private _formBuilder: FormBuilder,
-        private _contactService: ContactService
-    )
+        private _contactService: ContactService,
+        private _organizationService: OrganizationService)
     {
+        this.organizations = _organizationService.getList();
+
         // Set the defaults
         this.action = _data.action;
 
         if ( this.action === 'edit' )
         {
-            this.dialogTitle = 'Edit Contact';
+            this.dialogTitle = 'Редактирай контакт';
             this.contact = _data.contact;
         }
         else
         {
-            this.dialogTitle = 'New Contact';
+            this.dialogTitle = 'Добави контакт';
             this.contact = new Contact({});
         }
 
@@ -61,41 +80,78 @@ export class ContactsContactFormDialogComponent
      */
     createContactForm(): FormGroup
     {
+        let rawDob: any = get(this.contact, 'dob', {seconds: 0});
+        const defaultDob = rawDob && rawDob.seconds ? moment.unix(rawDob.seconds) : '';
+
+        this.status.setValue(this.contact.status);
         return this._formBuilder.group({
             id      : [this.contact.id],
             name    : [this.contact.name],
+            middleName: [this.contact.middleName],
             lastName: [this.contact.lastName],
             avatar  : [this.contact.avatar],
-            nickname: [this.contact.nickname],
-            company : [this.contact.company],
-            jobTitle: [this.contact.jobTitle],
             email   : [this.contact.email],
-            phone   : [this.contact.phone],
-            address : [this.contact.address],
-            birthday: [this.contact.birthday],
-            notes   : [this.contact.notes]
+            notes   : [this.contact.notes],
+            dob: [defaultDob],
+            selectedOrganizationId: [this.contact.selectedOrganizationId],
+            mobilePhone: [this.contact.mobilePhone],
+            landPhone: [this.contact.landPhone],
+            residentialAddress: [this.contact.residentialAddress],
+            currentAddress: [this.contact.currentAddress]
         });
+
+    }
+
+    normalizeDob(rawDob = null) {
+        return rawDob !== null ? moment.unix(rawDob.seconds).format('MM/DD/YYYY') : null;
+    }
+
+    async editContact(formData: FormGroup) {
+        try {
+            let data = {
+                name: formData.get('name').value,
+                middleName: formData.get('middleName').value,
+                lastName: formData.get('lastName').value,
+                email: formData.get('email').value,
+                selectedOrganizationId: formData.get('selectedOrganizationId').value,
+                dob: formData.get('dob').value ? formData.get('dob').value.toDate() : null,
+                status: this.status.value,
+                notes: formData.get('notes').value,
+                mobilePhone: formData.get('mobilePhone').value,
+                landPhone: formData.get('landPhone').value,
+                residentialAddress: formData.get('residentialAddress').value,
+                currentAddress: formData.get('currentAddress').value
+            };
+
+            await this._contactService.edit(this.contact.id, data);
+
+        } catch (e) {
+            console.log('error: ', e);
+        }
+        this.matDialogRef.close();
     }
 
     async addContact(formData: FormGroup) {
         try {
             let data = {
                 name: formData.get('name').value,
+                middleName: formData.get('middleName').value,
+                lastName: formData.get('lastName').value,
                 email: formData.get('email').value,
-                // selectedOrganizationId: formData.get('selectedOrganizationId').value,
-                // dob: formData.get('dob').value ? formData.get('dob').value.toDate() : null
+                selectedOrganizationId: formData.get('selectedOrganizationId').value,
+                dob: formData.get('dob').value ? formData.get('dob').value.toDate() : null,
+                status: this.status.value,
+                notes: formData.get('notes').value,
+                mobilePhone: formData.get('mobilePhone').value,
+                landPhone: formData.get('landPhone').value,
+                residentialAddress: formData.get('residentialAddress').value,
+                currentAddress: formData.get('currentAddress').value
             };
 
             await this._contactService.save(data);
-            // if (this.data.type === 'add') {
-            //
-            // } else {
-            //     await this._contactService.edit(this.data.contact.id, data);
-            // }
-
         } catch (e) {
+            console.log('error: ', e);
         }
-
         this.matDialogRef.close();
     }
 }

@@ -4,16 +4,18 @@ export class Contact
 {
     id: string;
     name: string;
+    middleName: string;
     lastName: string;
     avatar: string;
-    nickname: string;
-    company: string;
-    jobTitle: string;
     email: string;
-    phone: string;
-    address: string;
-    birthday: string;
     notes: string;
+    dob: string;
+    selectedOrganizationId: string;
+    status: string[];
+    mobilePhone: string;
+    landPhone: string;
+    residentialAddress: string;
+    currentAddress: string;
 
     /**
      * Constructor
@@ -25,16 +27,19 @@ export class Contact
         {
             this.id = contact.id || FuseUtils.generateGUID();
             this.name = contact.name || '';
+            this.middleName = contact.middleName || '';
             this.lastName = contact.lastName || '';
             this.avatar = contact.avatar || 'assets/images/avatars/profile.jpg';
-            this.nickname = contact.nickname || '';
-            this.company = contact.company || '';
-            this.jobTitle = contact.jobTitle || '';
             this.email = contact.email || '';
-            this.phone = contact.phone || '';
-            this.address = contact.address || '';
-            this.birthday = contact.birthday || '';
             this.notes = contact.notes || '';
+            this.dob = contact.dob || '';
+            this.selectedOrganizationId = contact.selectedOrganizationId || '';
+            this.status = contact.status || [];
+            this.mobilePhone = contact.mobilePhone || '';
+            this.landPhone = contact.landPhone || '';
+            this.residentialAddress = contact.residentialAddress || '';
+            this.currentAddress = contact.currentAddress || '';
+
         }
     }
 }

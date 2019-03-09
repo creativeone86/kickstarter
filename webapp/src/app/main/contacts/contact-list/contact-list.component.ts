@@ -10,6 +10,7 @@ import { FuseConfirmDialogComponent } from '@fuse/components/confirm-dialog/conf
 
 import { ContactsService } from '../contacts.service';
 import { ContactsContactFormDialogComponent } from '../contact-form/contact-form.component';
+import {ContactsSendMailDialogComponent} from "../send-mail/send-mail.component";
 
 @Component({
     selector     : 'contacts-contact-list',
@@ -159,6 +160,42 @@ export class ContactsContactListComponent implements OnInit, OnDestroy
             });
     }
 
+    newMail(contact) {
+        const newMailDialog = this._matDialog.open(ContactsSendMailDialogComponent, {
+            panelClass: 'send-mail-dialog',
+            data: {
+                contact: contact
+            }
+        });
+
+        newMailDialog.afterClosed()
+            .subscribe(response => {
+                if (!response) {
+                    return;
+                }
+                const actionType: string = response[0];
+                const formData: FormGroup = response[1];
+                // switch (actionType) {
+                //     /**
+                //      * Save
+                //      */
+                //     case 'save':
+                //
+                //         this._contactsService.updateContact(formData.getRawValue());
+                //
+                //         break;
+                //     /**
+                //      * Delete
+                //      */
+                //     case 'delete':
+                //
+                //         this.deleteContact(contact);
+                //
+                //         break;
+                // }
+            });
+    }
+
     /**
      * Delete Contact
      */
@@ -168,7 +205,7 @@ export class ContactsContactListComponent implements OnInit, OnDestroy
             disableClose: false
         });
 
-        this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete?';
+        this.confirmDialogRef.componentInstance.confirmMessage = 'Наистина ли желаете да изтриете контакта?';
 
         this.confirmDialogRef.afterClosed().subscribe(result => {
             if ( result )

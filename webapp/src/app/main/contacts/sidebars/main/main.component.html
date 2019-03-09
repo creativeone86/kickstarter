@@ -3,7 +3,7 @@
     <div class="card">
 
         <!-- SIDEBAR HEADER -->
-        <div class="header accent p-24" fxLayout="row" fxLayoutAlign="center">
+        <!--<div class="header accent p-24" fxLayout="row" fxLayoutAlign="center">-->
 
             <!-- USER -->
             <!--<img [src]="user.avatar" class="avatar mr-16" [alt]="user.name"/>-->
@@ -11,7 +11,7 @@
             <!-- / USER -->
 			<!--<button mat-raised-button color="basic" (click)="composeOrganizationDialog()">Добави организация</button>-->
 
-		</div>
+		<!--</div>-->
         <!-- / SIDEBAR HEADER -->
 
         <!-- SIDEBAR CONTENT -->
@@ -22,7 +22,7 @@
                 <div class="nav-item" aria-label="inbox">
                     <a class="nav-link" matRipple (click)="changeFilter('all')"
                        [ngClass]="{'active accent':filterBy ==='all'}">
-                        <span class="title">All Contacts</span>
+                        <span class="title">Всички контакти</span>
                     </a>
                 </div>
 				<div class="nav-item" *ngFor="let organization of organizations">

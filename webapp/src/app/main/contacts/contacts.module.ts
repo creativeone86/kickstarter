@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
-    MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatRippleModule, MatTableModule, MatToolbarModule
+    MatButtonModule, MatCheckboxModule, MatChip, MatDatepickerModule, MatFormFieldModule, MatIconModule, MatInputModule,
+    MatMenuModule, MatRippleModule, MatSelectModule, MatTableModule, MatToolbarModule
 } from '@angular/material';
 
 import { FuseSharedModule } from '@fuse/shared.module';
@@ -14,6 +15,7 @@ import { ContactsSelectedBarComponent } from './selected-bar/selected-bar.compon
 import { ContactsMainSidebarComponent } from './sidebars/main/main.component';
 import { ContactsContactFormDialogComponent } from './contact-form/contact-form.component';
 import {AuthGuard} from "../../core/auth.guard";
+import {ContactsSendMailDialogComponent} from "./send-mail/send-mail.component";
 
 const routes: Routes = [
     {
@@ -32,7 +34,8 @@ const routes: Routes = [
         ContactsContactListComponent,
         ContactsSelectedBarComponent,
         ContactsMainSidebarComponent,
-        ContactsContactFormDialogComponent
+        ContactsContactFormDialogComponent,
+        ContactsSendMailDialogComponent
     ],
     imports        : [
         RouterModule.forChild(routes),
@@ -47,6 +50,7 @@ const routes: Routes = [
         MatRippleModule,
         MatTableModule,
         MatToolbarModule,
+        MatSelectModule,
 
         FuseSharedModule,
         FuseConfirmDialogModule,
@@ -56,7 +60,8 @@ const routes: Routes = [
         ContactsService
     ],
     entryComponents: [
-        ContactsContactFormDialogComponent
+        ContactsContactFormDialogComponent,
+        ContactsSendMailDialogComponent
     ]
 })
 export class ContactsModule

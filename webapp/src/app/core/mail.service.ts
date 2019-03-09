@@ -17,8 +17,14 @@ export class MailService {
     ) {
     }
 
-    sendMail(to, message) {
+    sendMail(to, message, ref = null) {
         const callableFn = this.ngFunctions.httpsCallable('helloWorld/');
-        callableFn({to, message}).subscribe(data => console.log('@data', data));
+        callableFn({to, message}).subscribe(data => {
+            console.log('@data', data);
+            if(ref !== null) {
+                ref.close();
+
+            }
+        });
     }
 }

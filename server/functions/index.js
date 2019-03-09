@@ -43,7 +43,7 @@ app.post('/', (req, res) => {
 		subject: 'Тестов mail',
 		html: `<strong>${message}</strong>`,
 	};
-	sgMail.send(msg).then(data => res.json(data));
+	sgMail.send(msg).then(data => res.json({data: {message: 'ok'}}));
 }
 	);
 // app.put('/:id', (req, res) => res.send(Widgets.update(req.params.id, req.body)));

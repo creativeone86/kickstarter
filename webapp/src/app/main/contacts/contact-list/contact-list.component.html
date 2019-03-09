@@ -83,9 +83,13 @@
                 </button>
 
                 <mat-menu #moreMenu="matMenu">
-                    <button mat-menu-item aria-label="remove" (click)="deleteContact(contact)">
+					<button mat-menu-item aria-label="Изпрати mail" (click)="newMail(contact)">
+						<mat-icon>mail</mat-icon>
+						<span>Нов mail</span>
+					</button>
+                    <button mat-menu-item aria-label="Изтрий" (click)="deleteContact(contact)">
                         <mat-icon>delete</mat-icon>
-                        <span>Remove</span>
+                        <span>Изтрий</span>
                     </button>
                 </mat-menu>
             </div>
